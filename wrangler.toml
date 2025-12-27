@@ -1,0 +1,18 @@
+name = "spillyourguts-log"
+compatibility_date = "2024-11-27"
+pages_build_output_dir = "apps/web"
+
+# D1 database binding (for local dev and migrations)
+[[d1_databases]]
+binding = "DB"
+database_name = "spillyourguts-log"
+database_id = "21a1e1cb-1b27-49c9-87a3-be903d7a2a0"
+
+[env.production]
+name = "spillyourguts-log"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "spillyourguts-log"
+database_id = "21a1e1cb-1b27-49c9-87a3-be903d7a2a0"
+

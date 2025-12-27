@@ -1,0 +1,18 @@
+{
+  "name": "spillyourguts-log",
+  "version": "1.0.0",
+  "description": "Event logging app for Cloudflare Pages with D1 and Gitea webhook",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev apps/web --functions apps/functions",
+    "deploy": "wrangler pages deploy apps/web --functions apps/functions",
+    "migrate": "wrangler d1 migrations apply spillyourguts-log --remote",
+    "migrate:local": "wrangler d1 migrations apply spillyourguts-log --local"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^4.54.0"
+  }
+}
+
